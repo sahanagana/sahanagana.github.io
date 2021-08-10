@@ -38,11 +38,17 @@ h2,
 h3 {
   color: var(--brown);
   font-family: var(--title-font);
+  text-align: center;
+  margin-top: 300px;
+}
+h1 {
+  font-size: var(--big);
 }
 .container {
-  padding: 4.5rem 0 2.5rem;
-  width: 70%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16em;
+  margin-top: 10px;
 }
 
 /* buttons */
@@ -60,6 +66,7 @@ i {
   width: 3rem;
   color: white;
   cursor: pointer;
+  padding: 10px;
 }
 
 /* media queries */
