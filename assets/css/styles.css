@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
+:root {
+  /* fonts */
+  --title-font: "Poppins", sans-serif;
+  --body-font: "STIX Two Math", serif;
+
+  --big: 2rem;
+  --header: 1.5rem;
+  --normal: 1rem;
+  --small: 0.5rem;
+
+  /* colors */
+  --darkg: #105126;
+  --lightg: #86ad84;
+  --cream: #f2f2ed;
+  --beige: #e6dec3;
+  --brown: #807261;
+}
+
+/* base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal);
+  background-color: var(--beige);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+  color: var(--brown);
+  font-family: var(--title-font);
+}
+.container {
+  padding: 4.5rem 0 2.5rem;
+  width: 70%;
+  margin: auto;
+}
+
+/* buttons */
+a {
+  text-decoration: none;
+}
+i {
+  font-size: 24px;
+}
+.btn {
+  background-color: var(--lightg);
+  border: none;
+  border-radius: 10px;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* media queries */
