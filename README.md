@@ -8,3 +8,11 @@ Portfolio website where you can see my work on all things code (But also other s
 - Fun stuff/ web experiments
 - Resume hee heee
 
+To do:
+✓ set up colors/variables
+✓ center things
+- get rid of those weird lil button thingies (very technical)
+- add hover transitions
+- format social buttons
+- link stuff
+- animations and extras
