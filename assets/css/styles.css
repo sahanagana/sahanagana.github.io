@@ -68,5 +68,8 @@ i {
   cursor: pointer;
   padding: 10px;
 }
+.btn:hover{
+  
+}
 
 /* media queries */
