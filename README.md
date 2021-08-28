@@ -12,7 +12,8 @@ To do:
 - set up colors/variables ✓
 - center things ✓
 - get rid of those weird lil button thingies (very technical) ✓
-- add hover transitions
+- add hover transitions ✓
+- add button titles
 - format social buttons
 - link stuff
 - animations and extras
