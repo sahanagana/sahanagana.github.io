@@ -39,16 +39,16 @@ h3 {
   color: var(--brown);
   font-family: var(--title-font);
   text-align: center;
-  margin-top: 300px;
 }
 h1 {
   font-size: var(--big);
+  margin-top: 300px;
 }
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 16em;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 /* buttons */
@@ -99,7 +99,7 @@ i {
   text-decoration: none;
   text-indent: 0;
   overflow: visible;
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: normal;
   color: var(--darkg);
   text-shadow: 1px 0 1px #888;
