@@ -68,8 +68,11 @@ i {
   cursor: pointer;
   padding: 10px;
 }
-.btn:hover{
-  
+.tooltip{
+  visibility: hidden;
+}
+.btn:hover .tooltip{
+  visibility: visible;
 }
 
 /* media queries */
