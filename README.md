@@ -11,7 +11,7 @@ Portfolio website where you can see my work on all things code (But also other s
 To do:
 - set up colors/variables ✓
 - center things ✓
-- get rid of those weird lil button thingies (very technical)
+- get rid of those weird lil button thingies (very technical) ✓
 - add hover transitions
 - format social buttons
 - link stuff
