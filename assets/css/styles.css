@@ -54,6 +54,9 @@ h1 {
 /* buttons */
 a {
   text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 i {
   font-size: 24px;
@@ -67,12 +70,6 @@ i {
   color: white;
   cursor: pointer;
   padding: 10px;
-}
-.tooltip{
-  visibility: hidden;
-}
-.btn:hover .tooltip{
-  visibility: visible;
 }
 
 /* media queries */
