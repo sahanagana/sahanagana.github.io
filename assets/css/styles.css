@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
 :root {
   /* fonts */
-  --title-font: "Poppins", sans-serif;
+  --aria-label-font: "Poppins", sans-serif;
   --body-font: "STIX Two Math", serif;
 
   --big: 2rem;
@@ -24,7 +24,7 @@
   margin: 0;
 }
 body {
-  margin: 0;
+  margin: 0 0 0s;
   font-family: var(--body-font);
   font-size: var(--normal);
   background-color: var(--beige);
@@ -37,12 +37,17 @@ h1,
 h2,
 h3 {
   color: var(--brown);
-  font-family: var(--title-font);
+  font-family: var(--aria-label-font);
   text-align: center;
 }
 h1 {
   font-size: var(--big);
   margin-top: 300px;
+}
+h3 {
+  font-size: var(--header);
+  font-family: var(--body-font);
+  font-weight: normal;
 }
 .container {
   margin-left: auto;
@@ -50,10 +55,53 @@ h1 {
   width: 16em;
   margin-top: 30px;
 }
+section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#about {
+  padding: 0.5rem 0 50%;
+  background-color: var(--cream);
+}
+.desc {
+  padding: 0 4rem 0 4rem;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+#socials {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(134, 126, 126, 0.4); /* Black w/ opacity */
+}
+.content {
+  font-family: var(--body-font);
+  font-size: var(--normal);
+  color: var(--darkg);
+  background-color: var(--cream);
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+}
 
 /* buttons */
 a {
   text-decoration: none;
+  color: var(--darkg);
 }
 i {
   font-size: 24px;
@@ -69,18 +117,9 @@ i {
   padding: 10px;
 }
 .btn:hover {
-  animation: example 1s ease-in-out infinite alternate;
-}
-@keyframes example {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
+  animation: bounce 0.5s ease-in-out infinite alternate;
 }
 
-/* button labels */
 [aria-label] {
   position: relative;
 }
@@ -89,7 +128,7 @@ i {
   content: attr(aria-label);
   display: none;
   position: absolute;
-  top: 110%;
+  top: 170%;
   left: 10px;
   z-index: 5000;
   pointer-events: none;
@@ -105,9 +144,7 @@ i {
   text-shadow: 1px 0 1px #888;
   background-color: var(--cream);
   border-left: 6px solid var(--brown);
-  -webkit-border-radius: 2px;
   border-radius: 20px;
-  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -121,7 +158,13 @@ a:focus {
   animation: label 1s;
 }
 
-@keyframes label{
+/* scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* animations */
+@keyframes label {
   0% {
     opacity: 0%;
   }
@@ -130,4 +173,29 @@ a:focus {
   }
 }
 
-/* media queries */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes in {
+  0% {
+    transform: translateY(2000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes out {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(2000px);
+  }
+}
