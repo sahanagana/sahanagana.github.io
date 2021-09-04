@@ -14,6 +14,6 @@ To do:
 - get rid of those weird lil button thingies (very technical) ✓
 - add hover transitions ✓
 - format button titles ✓
-- format social buttons
+- format social buttons ✓
 - link stuff
 - extras
