@@ -7,7 +7,7 @@ var btn = document.getElementById("soc");
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
   modal.style.display = "block";
-  document.getElementsByClassName("content").classList.add("in");
+  document.getElementsByClassName("content1").classList.add("in");
 };
 
 // When the user clicks anywhere outside of the modal, close it
