@@ -1,13 +1,19 @@
-// Get the modal
+// Get modal
 var modal = document.getElementById("socials");
 
-// Get the button that opens the modal
-var btn = document.getElementById("soc");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
+// Get the buttons that opens the modal
+var sbtn = document.getElementById("soc");
+var rbtn = document.getElementById("res");
+var pbtn = document.getElementById("proj");
+var ebtn = document.getElementById("ext");
+//Get modal content
+var con = document.getElementsByClassName("content")
+// When the user clicks on the button, open the  associated modal
+sbtn.onclick = function () {
   modal.style.display = "block";
-  document.getElementsByClassName("content1").classList.add("in");
+  //change content to social
+  
+  con.classList.add("in");
 };
 
 // When the user clicks anywhere outside of the modal, close it
