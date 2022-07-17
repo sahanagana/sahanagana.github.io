@@ -7,7 +7,7 @@ var rbtn = document.getElementById("res");
 var pbtn = document.getElementById("proj");
 var ebtn = document.getElementById("ext");
 //Get modal content
-var con = document.getElementsByClassName("content")
+var con = document.getElementsByID("mod")
 // When the user clicks on the button, open the  associated modal
 //SOCIAL
 sbtn.onclick = function () {
