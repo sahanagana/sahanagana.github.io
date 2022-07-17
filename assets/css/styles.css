@@ -88,7 +88,6 @@ section {
   animation-timing-function: ease-out;
 }
 .content {
-  display: none;
   font-family: var(--body-font);
   font-size: var(--normal);
   color: var(--darkg);
