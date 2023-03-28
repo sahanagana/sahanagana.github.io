@@ -13,12 +13,7 @@ var con = document.getElementByID("mod")
 sbtn.onclick = function () {
   modal.style.display = "block";
   //change content to social
-  con.innerHTML = `
-  <a href = 'https://www.linkedin.com/in/sahana-ganapathy/' class = 'ddlink'><i class='ri-linkedin-line'></i></br>LinkedIn</a> </br></br>
-  <a href = 'https://github.com/sahanagana' class = 'ddlink'><i class='ri-github-line'></i></br>Github</a></br></br>
-  <h4><em>click anywhere else to close</em></h4>
-  `;
-  //insert
+  
   con.classList.add("in");
 };
 //RESUME
