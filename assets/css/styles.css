@@ -117,7 +117,7 @@ section {
 .con{
   position: fixed;
   margin-top: 30px;
-  margin-left: 25vw;
+  margin-left: 30vw;
   width: 20em;
   font-size: var(--header);
   font-family: var(--aria-label-font);
