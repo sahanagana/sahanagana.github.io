@@ -129,6 +129,9 @@ section {
   font-size: var(--header);
   font-family: var(--aria-label-font);
 }
+.con.text{
+  padding-bottom: 60px;
+}
 .entry{
   margin-top: 10px;
   background-color: var(--cream);
@@ -142,12 +145,18 @@ a, h6 {
 .entry a, .grid-con a {
   text-decoration: underline dotted;
 }
+.entry a:hover, .grid-con a:hover{
+  animation: fade .2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 .entry h6{
   font-family: var(--body-font);
 }
 p{
   color: var(--brown);
   background-color: rgb(242, 242, 237, 0.4);
+  padding: 10px 10px 10px 10px;
 }
 /*blog entries*/
 .grid-con{
@@ -159,10 +168,10 @@ p{
   font-size: var(--header);
   font-family: var(--aria-label-font);
   gap: 10px 10px;
-  grid-template-columns: 5em 10em;
+  grid-template-columns: 15vw 45vw;
   background-color: rgb(242, 242, 237, 0.4);
   border-radius: 10px;
-  justify-items: center;
+  justify-items: left;
 }
 .date{
   grid-column: 1;
@@ -275,6 +284,15 @@ body::-webkit-scrollbar {
   to {
     top: 0;
     opacity: 1;
+  }
+}
+
+@keyframes fade{
+  0%{
+    opacity: 100%;	
+  }
+  100%{
+    opacity: 50%;
   }
 }
 
