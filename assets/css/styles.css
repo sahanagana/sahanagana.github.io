@@ -113,12 +113,12 @@ section {
   line-height: 30px;
   text-align: center;
 }
-/* project and blog entries */
+/* project entries */
 .con{
   position: fixed;
   margin-top: 30px;
-  margin-left: 35vw;
-  width: 25em;
+  margin-left: 25vw;
+  width: 20em;
   font-size: var(--header);
   font-family: var(--aria-label-font);
 }
@@ -132,11 +132,36 @@ a, h6 {
   text-decoration: none;
   color: var(--darkg);
 }
-.entry a {
+.entry a, .grid-con a {
   text-decoration: underline dotted;
 }
 .entry h6{
   font-family: var(--body-font);
+}
+/*blog entries*/
+.grid-con{
+  display: grid;
+  position: fixed;
+  margin-top: 30px;
+  margin-left: 20vw;
+  width: 60vw;
+  font-size: var(--header);
+  font-family: var(--aria-label-font);
+  gap: 10px 10px;
+  grid-template-columns: 5em 10em;
+  background-color: rgb(242, 242, 237, 0.4);
+  border-radius: 10px;
+  justify-items: center;
+}
+.date{
+  grid-column: 1;
+  margin-top: 15px;
+  padding: 0px 10px 10px 20px;
+}
+.blog-entry{
+  grid-column: 2;
+  margin-top: 10px;
+  padding: 0px 10px 10px 20px;
 }
 /* buttons */
 i {
