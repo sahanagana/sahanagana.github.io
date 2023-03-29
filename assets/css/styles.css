@@ -42,8 +42,7 @@ h3 {
 }
 h1 {
   font-size: var(--big);
-  margin-top: 300px;
-  
+  margin-top: 150px; 
 }
 h3 {
   font-size: var(--header);
@@ -76,6 +75,9 @@ section {
   background-color: var(--cream);
 }
 .desc {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
   padding: 0 5rem 0 5rem;
 }
 .hidden {
@@ -84,7 +86,12 @@ section {
 }
 #side{
   text-align: left;
-  margin-left: 100px;
+}
+#sidecon{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  text-align:left;
 }
 
 #socials {
@@ -115,10 +122,10 @@ section {
 }
 /* project entries */
 .con{
-  position: fixed;
   margin-top: 30px;
-  margin-left: 30vw;
-  width: 20em;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50vw;
   font-size: var(--header);
   font-family: var(--aria-label-font);
 }
@@ -137,6 +144,10 @@ a, h6 {
 }
 .entry h6{
   font-family: var(--body-font);
+}
+p{
+  color: var(--brown);
+  background-color: rgb(242, 242, 237, 0.4);
 }
 /*blog entries*/
 .grid-con{
@@ -187,7 +198,7 @@ img{
 .container.hm{
   position: fixed;
   top: 0px;
-  right: 0px;
+  right: -80px;
 
 }
 .btn:hover {
