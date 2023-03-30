@@ -130,8 +130,6 @@ section {
   width: 50vw;
   font-size: var(--header);
   font-family: var(--body-font);
-}
-.con.text{
   padding-bottom: 60px;
 }
 .entry{
@@ -155,10 +153,13 @@ a, h6 {
 .entry h6{
   font-family: var(--body-font);
 }
-p{
+ul, p{
   color: var(--brown);
   background-color: rgb(242, 242, 237, 0.4);
   padding: 10px 10px 10px 10px;
+}
+ul{
+  padding: 10px 40px 10px 40px;
 }
 /*blog entries*/
 .grid-con{
