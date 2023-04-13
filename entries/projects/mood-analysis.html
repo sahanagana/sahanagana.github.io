@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+    <html lang=  "en">
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+            <link rel="stylesheet" href="../../assets/css/styles.css">
+            <link rel = 'icon' type="image/x-icon" href="assets/img/proj.ico">
+            <title>Sahana's Projects</title>
+
+        </head>
+
+        <body>
+          <section id = 'home'>
+            <div class = "container hm">
+              <a href = '../../projects.html' aria-label="b a c k">
+                <button class= 'btn'><i class="ri-gamepad-fill"></i></button>
+              </a>
+            </div>
+            <h1 class = 'side'> Creating a Machine Learning Program that Finds the Moods of a Spotify Playlist </h1>
+              <div class = 'con'>
+		      <p> Beginning January 2023, I became engineering lead for <a href = "https://eclair-robotics.github.io/">ECLAIR</a>, a student organization centered around exploring the intersection between AI and robotics. I led a team of students on a data science project that used a machine learning model to estimate sentiment in music playlists.</br></br>
+		      <b>The Original Plan</b></br></br>
+		      Our plan was to feed lyrics through a tokenizing algorithm and then have the tokenized lyrics be the input to a transformer model. We would train this model with training dataset that included the lyrics of a song and its classified mood. The mood could include actual text such as "angry", or "happy", or valence and arousal numbers. Valence and arousal are values on a scale from 0 to 1 that are used to describe emotion- Valence representing negative/positive and arousal representing calm/energetic. We were preferential to the numbers becuase we felt that it would be easier for the model to interpret. We also wanted the dataset to be limited to English songs so as to reduce the number of potential tokens. </br></br> 
+                      <b>Finding the Dataset</b></br></br>
+		      Suprisingly, this was one of the most difficult steps. Finding a model that fit all the specifications was proving itself to be arduous, so we ended up melding together two datasets to create one that would serve the purpose of training the model. <a href = "https://www.kaggle.com/datasets/cakiki/muse-the-musical-sentiment-dataset">A kaggle dataset</a> contained the lyrics while <a href = "https://www.kaggle.com/datasets/cakiki/muse-the-musical-sentiment-dataset">the MuSe dataset</a> contained valence/arousal values and emotion tags. Unfortunately, choosing to combine the datasets also meant we had to cut out data points, such as songs that were not present in both datasets. This shrank our dataset from over 300K songs to a mere 17K. </br></br>
+                      <b>Training the Model</b></br></br>
+		      Once we actually began training a model, we ran into further roadblocks. Using the valence/arousal values in the dataset only caused the model to find the global mean of those values. We decided to change tracks to the user-labeled data: tags for each song containing key terms that describe its tempo and feel. My friend and one of the team members, Nikhil Kalidasu, wrote a very <a href = "https://nik875.github.io/2023/03/16/language-models.html"> detailed article </a> going into the actual build of the model and I suggest checking it out for more in-depth information.  </br></br>
+		      <b>Getting User Data</b></br></br>
+		      We created a framework of python files designed to go through a user's playlists, run their songs through the model, and find the most popular tags for that user. We collected spotify IDs from other members of ECLAIR, used the Spotify API to get playlist and song data, and used the Genius API to get the lyrics for that song using the title and artist. For each song, we fed the lyrics through the ML model, then created a dataframe that contained the tags a user had and the number each tag occurred. We ran this process for each user ID, each playlist for that user, and each song in that playlist (Whew)! Finally, we compared the users to see which user had the most of what tag, and presented the results to the rest of the organization.</br></br> 
+		      <b>Next Steps</b></br></br>
+                      My plan for this model (and my team) is mostly likely to create a web application in which people beyond the scope of ECLAIR can check their listening data.</br></br> 
+		      </p>
+	      </div>
+	  </section>
+	</body>
+    </html>

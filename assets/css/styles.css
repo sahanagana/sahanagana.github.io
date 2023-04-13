@@ -128,9 +128,13 @@ section {
   margin-left:auto;
   margin-right:auto;
   width: 50vw;
+  min-width: 20em;
   font-size: var(--header);
   font-family: var(--body-font);
-  padding-bottom: 60px;
+  padding: 10px 20px 60px 10px;
+}
+.con a {
+  text-decoration: underline dotted;
 }
 .entry{
   margin-top: 10px;
