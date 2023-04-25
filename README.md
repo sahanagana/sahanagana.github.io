@@ -1,9 +1,8 @@
-Portfolio website where you can see my work on all things code (But also other stuff too)!
+# Portfolio website where you can see my work on all things code (But also other stuff too)!
 
 Upcoming Drafts:
 - (thoughts) My personal writing style
 - (thoughts) My experience as an Engineering Lead
-- (projects) An overview of the ECLAIR ML project I led
 
 -------------------------------------------------------------------------------------------------------------
 
