@@ -19,7 +19,8 @@ layout: default
         </div>
         <h1> projects </h1>
         <div class='con'>
-            {% for post in site.projects %}
+            {% assign projects = site.projects | reverse %}
+            {% for post in projects %}
             <div class='entry'>
                 <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
                 <h6>{{ post.subtitle }}<h6>

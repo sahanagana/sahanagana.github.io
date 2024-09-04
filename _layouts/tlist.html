@@ -19,7 +19,8 @@ layout: default
         </div>
         <h1 id='sidetitle'>thoughts </h1>
         <div class='grid-con'>
-            {% for post in site.thoughts %}
+            {% assign thoughts = site.thoughts | reverse %}
+            {% for post in thoughts %}
             <h6 class='date'>{{ post.date | date: "%m.%d.%Y" }}</h6>
             <div class='blog-entry'>
                 <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
