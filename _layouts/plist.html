@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel='icon' type="image/x-icon" href="assets/img/proj.ico">
+    <title>Sahana's Projects</title>
+
+</head>
+
+<body>
+    <section id='home'>
+        <div class="container hm">
+            <a href='index.html' aria-label="h o m e">
+                <button class='btn'><i class="ri-seedling-fill"></i></button>
+            </a>
+        </div>
+        <h1> projects </h1>
+        <div class='con'>
+            {% for post in site.projects %}
+            <div class='entry'>
+                <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
+                <h6>{{ post.subtitle }}<h6>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</body>

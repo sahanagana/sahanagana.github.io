@@ -1,0 +1,9 @@
+title: "Sahana's Portfolio"
+baseurl: ""
+url: "http://localhost:4000"
+
+collections:
+  projects:
+    output: true
+  thoughts:
+    output: true
