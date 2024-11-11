@@ -47,10 +47,13 @@ h1 {
   font-size: var(--big);
   margin-top: 150px; 
 }
-h3 {
+h3, h4 {
   font-size: var(--header);
   font-family: var(--body-font);
   font-weight: normal;
+}
+h4{
+  background-color: rgb(242, 242, 237, 0.4);
 }
 
 .container {
