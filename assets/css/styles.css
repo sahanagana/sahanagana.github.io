@@ -181,7 +181,7 @@ a, h6 {
 .entry h6{
   font-family: var(--body-font);
 }
-ul, ol, p{
+ul, ol, p, h4{
   color: var(--brown);
   background-color: rgb(242, 242, 237, 0.4);
   padding: 10px 10px 10px 10px;
