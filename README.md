@@ -1,12 +1,14 @@
 # Portfolio website where you can see my work on all things code (But also other stuff too)!
 
 Upcoming Drafts:
-- (thoughts) My personal writing style
-- (thoughts) My experience as an Engineering Lead
-
+- (projects) contributing to open source
+- (projects) hackathon experience ✓
+- (projects) software engineering ✓
+- (projects) fall 24 ecar update
+- (projects) my experience at ufcu
+- (projects) CPTC 2024!
 -------------------------------------------------------------------------------------------------------------
 
-Completed tasks that I'll just leave here because I enjoy saving old stuff:
 (To be) Included:
 - My social media
 - Science Fair Club/ Projects
